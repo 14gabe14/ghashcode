@@ -7,10 +7,11 @@ int main(void){
     int days; //total amount of available days
     
     int books_score[N];
-    int num_books_per_library[N];
+
     int libraries[N][N];
     int Avg_Lib_Score[N]; //sum of book scores by total number of books
 
+    int num_books_per_library[N];
     int max_scanned[N]; //maximum books that can be scanned per day
     int signup_days[N]; //days required to sign up  all books
 
@@ -21,6 +22,12 @@ int main(void){
     for(int i = 0; i < books; i++){
         fscanf(fptr, "%d ", &books_score[i]);
         printf("%d", books_score[i]);
+    }
+    for(int i = 0; i < num_libraries; i++){
+        fscanf(fptr, "%d %d %d", &num_books_per_library[i], &signup_days[i], &max_scanned[i]);
+        for(int j = 0; j < num_books_per_library[i]; j++){
+            fscanf(fptr, "%d ", libraries[i][j]);
+        }
     }
     fclose(fptr);
     
