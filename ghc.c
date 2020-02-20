@@ -18,7 +18,10 @@ int main(void){
     FILE *fptr;
     fptr = fopen("a_example.txt","r");
     fscanf(fptr, "%d %d %d", &books, &num_libraries, &days);
-    printf("%d", books);
+    for(int i = 0; i < books; i++){
+        fscanf(fptr, "%d ", &books_score[i]);
+        printf("%d", books_score[i]);
+    }
     fclose(fptr);
     
     for(int i=0;i<num_libraries;i++){
@@ -32,3 +35,4 @@ int main(void){
     }
     
 }
+
