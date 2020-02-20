@@ -29,7 +29,7 @@ int main(void){
         }
     }
     fclose(fptr);
-    /*
+
     for(int i=0;i<num_libraries;i++){
         for(int j=0;j<num_books_per_library[i];i++){
             Avg_Lib_Score[i]=books_score[i]/num_books_per_library[i];
@@ -38,7 +38,6 @@ int main(void){
 
             }
         }
-    }
-    */
+    }  
 }
 
