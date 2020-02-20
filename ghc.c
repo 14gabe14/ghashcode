@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define N 100000
+#define N 100
 
 int main(void){
     int books; //number of books
@@ -8,7 +8,7 @@ int main(void){
     
     int books_score[N];
     int num_books_per_library[N];
-    int libraries[1000][N];
+    int libraries[N][N];
     int Avg_Lib_Score[N]; //sum of book scores by total number of books
 
     int max_scanned[N]; //maximum books that can be scanned per day
@@ -20,7 +20,7 @@ int main(void){
     fscanf(fptr, "%d %d %d", &books, &num_libraries, &days);
     printf("%d", books);
     fclose(fptr);
-
+    
     for(int i=0;i<num_libraries;i++){
         for(int j=0;j<num_books_per_library[i];i++){
             Avg_Lib_Score[i]=books_score[i]/num_books_per_library[i];
@@ -30,4 +30,5 @@ int main(void){
             }
         }
     }
+    
 }
