@@ -1,4 +1,7 @@
 #include <stdio.h>
-//editing_eva
 
-//change test
+int main(void){
+    int books;
+    int libraries;
+    int days;
+}
