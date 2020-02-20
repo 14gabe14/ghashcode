@@ -17,7 +17,7 @@ int main(void){
         for(int j=0;j<num_books_per_library[i];i++){
             Avg_Lib_Score[i]=books_score[i]/num_books_per_library[i];
             Avg_Lib_Score[i+1]=books_score[i+1]/num_books_per_library[i+1];
-            if( (Avg_Lib_Score*max_scanned[i]-signup_days[i]) > (Avg_Lib_Score*max_scanned[i+1]-signup_days[i+1]) ){
+            if( (Avg_Lib_Score*max_scanned[i]-signup_days[i]) < (Avg_Lib_Score*max_scanned[i+1]-signup_days[i+1]) ){
 
             }
         }
